@@ -121,6 +121,9 @@ section{
     align-items: center;
     gap: 2rem;
 }
+.content{
+    max-width: 80vh;
+}
 .logo-img img{
     position: relative;
     width: 260px;
@@ -141,7 +144,6 @@ section{
 }
 .professions{
     font-family: "Encode Sans SC", sans-serif;
-    font-size: 30px;
 }
 .professions span{
     position: relative;
@@ -156,6 +158,7 @@ section{
 }
 .elements p{
     font-family: "Dancing Script", cursive;
+    padding-top: 10px;
 }
 span{
     color: #ff8772;
@@ -217,12 +220,16 @@ span{
     font-size: medium;
 } 
 @media(max-width:2560px){
+    .content{
+        gap: 5rem;
+        max-width: 120vh;
+    }
     .elements h1{
-        font-size: 6rem;
+        font-size: 5rem;
     }
 
     .elements h3{
-        font-size: 3.5rem;
+        font-size: 2.3rem;
     }
     .elements p{
         font-size: 2rem;
@@ -234,10 +241,10 @@ span{
     }
 
     .elements h3{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .elements p{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 }
 @media(max-width: 768px){
@@ -252,13 +259,13 @@ span{
     display: block;
     }
     .elements h1{
-        font-size: 5rem;
+        font-size: 3rem;
     }
     .elements h3{
-        font-size: 2.5rem;
+        font-size: 1.7rem;
     }
     .elements p{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 }
 @media(max-width: 425px){
@@ -269,7 +276,7 @@ span{
         font-size: 1.6rem;
     }
     .elements p{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 }
 @media(max-width: 320px){
