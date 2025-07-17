@@ -250,7 +250,7 @@ span{
 @media(max-width: 768px){
     .content{
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     }
     .hide{
     display: none;
