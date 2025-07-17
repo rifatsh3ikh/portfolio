@@ -295,3 +295,8 @@ span{
         content: "photographer";
     }
 }
+@media screen and (max-width: 768px) {
+    body {
+    min-height: 100dvh; /* This newer unit adjusts to dynamic viewport height on mobile */
+    }
+}
