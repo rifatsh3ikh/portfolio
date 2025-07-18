@@ -209,7 +209,6 @@ span{
     background-color: rgba(rgba(0, 0, 0, 0.01));
     backdrop-filter: blur(10px);
     text-align: center;
-    z-index: 10;
 }
 .grid-container{
     display: grid;
@@ -217,8 +216,8 @@ span{
     gap: 15px;
     justify-content: center;
     margin: 8%;
-    font-size: medium;
-} 
+    margin-top: 150px;
+}
 @media(max-width:2560px){
     .content{
         gap: 5rem;
