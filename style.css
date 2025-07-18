@@ -53,7 +53,7 @@ header{
     z-index: 100;
 }
 .name-tag{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #ff8772;
     font-weight: 800;
     cursor: pointer;
@@ -126,10 +126,8 @@ section{
 }
 .logo-img img{
     position: relative;
-    width: 260px;
     border-radius: 50%;
     border: 10px #ff8772;
-    
 }
 .elements{
     position: relative;
@@ -209,6 +207,7 @@ span{
     background-color: rgba(rgba(0, 0, 0, 0.01));
     backdrop-filter: blur(10px);
     text-align: center;
+    font-size: medium;
 }
 .grid-container{
     display: grid;
@@ -216,9 +215,14 @@ span{
     gap: 15px;
     justify-content: center;
     margin: 8%;
-    margin-top: 150px;
 }
 @media(max-width:2560px){
+    .grid-container{
+        height: 40%;
+    }
+    .logo-img img{
+        width: 350px;
+        }
     .content{
         gap: 5rem;
         max-width: 120vh;
@@ -234,7 +238,12 @@ span{
         font-size: 2rem;
     }
 }
-@media(max-width:1440px){ 
+@media(max-width:1440px){
+    .grid-container{height: 50%;
+    }
+    .logo-img img{
+    width: 280px;
+    }
     .elements h1{
         font-size: 4rem;
     }
@@ -247,6 +256,12 @@ span{
     }
 }
 @media(max-width: 768px){
+    .grid-container{
+        height: 80%;
+    }
+    .logo-img img{
+    width: 200px;
+    }
     .content{
     flex-direction: column;
     gap: 1rem;
@@ -268,6 +283,9 @@ span{
     }
 }
 @media(max-width: 425px){
+    .logo-img img{
+    width: 160px;
+    }    
     .elements h1{
         font-size: 3rem;
     }
@@ -279,6 +297,9 @@ span{
     }
 }
 @media(max-width: 320px){
+    .logo-img img{
+    width: 140px;
+    }
     .sidebar{
     width: 100%;
     }
