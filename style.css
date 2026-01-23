@@ -200,6 +200,15 @@ span{
     color: black;
     box-shadow: 0 0 25px #ff8772;
 }
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
 .card{
     padding: 2em;
     border: 1px solid rgb(75, 82, 92);
@@ -216,9 +225,13 @@ span{
     justify-content: center;
     margin: 8%;
 }
+#education{
+    align-items: center;
+    height: 25%;
+}
 @media(max-width:2560px){
     .grid-container{
-        height: 40%;
+        height: 65%;
     }
     .logo-img img{
         width: 350px;
@@ -239,7 +252,26 @@ span{
     }
 }
 @media(max-width:1440px){
-    .grid-container{height: 50%;
+    .grid-container{
+        height: 60%;
+    }
+    .logo-img img{
+    width: 280px;
+    }
+    .elements h1{
+        font-size: 4rem;
+    }
+
+    .elements h3{
+        font-size: 2rem;
+    }
+    .elements p{
+        font-size: 1.7rem;
+    }
+}
+@media(max-width:1024px){
+    .grid-container{
+        height: 80%;
     }
     .logo-img img{
     width: 280px;
@@ -257,7 +289,7 @@ span{
 }
 @media(max-width: 768px){
     .grid-container{
-        height: 80%;
+        height: 85%;
     }
     .logo-img img{
     width: 200px;
